@@ -2,10 +2,6 @@
   const root = document.documentElement;
   const body = document.body;
 
-  function removeLegacyBrandIcons() {
-    document.querySelectorAll(".brand-icon").forEach((icon) => icon.remove());
-  }
-
   function setModeLabel() {
     const btn = document.getElementById("mode-toggle");
     if (!btn) return;
@@ -24,7 +20,6 @@
     body.classList.add("light-mode");
   }
   setModeLabel();
-  removeLegacyBrandIcons();
 
   document.addEventListener("click", (e) => {
     const menu = document.getElementById("navbarMenu");
@@ -59,6 +54,4 @@
       }
     }
   });
-
-  document.addEventListener("DOMContentLoaded", removeLegacyBrandIcons);
 })();
