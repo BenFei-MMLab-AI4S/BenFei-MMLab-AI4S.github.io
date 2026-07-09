@@ -1,15 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
+  function removeLegacyBrandIcons() {
+    document.querySelectorAll('.brand-icon').forEach(icon => icon.remove());
+  }
+
   const savedMode = localStorage.getItem('mode');
   if (savedMode === 'dark') {
     document.body.classList.add('dark-mode');
   } else {
     document.body.classList.add('light-mode');
   }
+  removeLegacyBrandIcons();
 
   fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar').innerHTML = data;
+      removeLegacyBrandIcons();
 
       const modeToggleButton = document.getElementById('mode-toggle');
       if (!modeToggleButton) return;

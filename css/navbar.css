@@ -82,6 +82,11 @@ white-space: nowrap;
 text-rendering: optimizeLegibility;
 }
 
+.navbar-brand > img,
+.brand-icon{
+display: none !important;
+}
+
 .brand-name{
 display: inline-block;
 line-height: 1;
