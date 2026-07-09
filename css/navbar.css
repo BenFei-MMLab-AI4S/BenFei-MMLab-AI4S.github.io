@@ -83,14 +83,12 @@ text-rendering: optimizeLegibility;
 }
 
 .brand-icon{
-width: 22px;
-height: 22px;
+width: 30px;
+height: 30px;
 display: block;
 flex-shrink: 0;
-stroke: currentColor;
-stroke-width: 1.8;
-fill: none;
-opacity: 0.92;
+object-fit: contain;
+opacity: 0.96;
 }
 
 .brand-name{
@@ -107,7 +105,7 @@ color: color-mix(in srgb, var(--nav-fg) 90%, #9b8cff 10%);
 }      
 
 .navbar-brand:hover .brand-icon{
-    color: var(--purple-main);
+    opacity: 1;
 }
 
 .navbar-brand:hover .brand-name{
@@ -115,7 +113,7 @@ color: color-mix(in srgb, var(--nav-fg) 90%, #9b8cff 10%);
 }
 
 .dark-mode .navbar-brand:hover .brand-icon{
-    color: var(--purple-main);
+    opacity: 1;
 }
 
 .dark-mode .navbar-brand:hover .brand-name{
