@@ -1,0 +1,63 @@
+.service-list{
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.service-item{
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--card-border, #e6e8ef);
+}
+
+.service-year{
+  color: var(--purple-main, #7c6fd6);
+  font-size: 0.92rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.service-title{
+  color: var(--gray-900, #1f2937);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.service-role{
+  color: var(--gray-700, #4b5563);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.service-title a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-title a:hover{
+  color: var(--purple-main, #7c6fd6);
+  text-decoration: underline;
+}
+
+.dark-mode .service-item{
+  border-bottom-color: rgba(255,255,255,0.12);
+}
+
+.dark-mode .service-title{
+  color: rgba(255,255,255,0.94);
+}
+
+.dark-mode .service-role{
+  color: rgba(255,255,255,0.72);
+}
+
+@media (max-width: 768px){
+  .service-item{
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+}
