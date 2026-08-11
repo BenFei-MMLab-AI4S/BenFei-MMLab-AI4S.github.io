@@ -13,6 +13,10 @@
   border-bottom: 1px solid var(--card-border, #e6e8ef);
 }
 
+.service-item:last-child{
+  border-bottom: 0;
+}
+
 .service-year{
   color: var(--purple-main, #7c6fd6);
   font-size: 0.92rem;
